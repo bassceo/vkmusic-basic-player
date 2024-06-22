@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+#track {
+  width: 100%;
+}
+
+.track-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.track-info {
+  
+  flex-grow: 1;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+}
+.track-name{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+}
+.track-artist {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #818C99;
+}
+
+.track-controls {
+  display: flex;
+  align-items: center;
+}
+
+.track-time {
+  margin-right: 14px;
+  font-size: 13px;
+
+  color: #818C99;
+}
+
+.active-cover{
+  filter: brightness(40%);
+  -webkit-filter: brightness(40%);
+}
