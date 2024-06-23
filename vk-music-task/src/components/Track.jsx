@@ -17,6 +17,7 @@ const Track = observer(({ trackId, track, trackName, artist, coverUrl }) => {
   const [play, { pause, duration, sound }] = useSound(track, {
     onend: () => {
       setIsPlaying(false);
+      setIsPlayed(false);
       if (sound) {
         sound.seek(0);
         trackStore.updateTrackTime(trackId, 0);
